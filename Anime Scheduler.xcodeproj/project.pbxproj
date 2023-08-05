@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A61675AA2A6F4FB100AF7F64 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675A92A6F4FB100AF7F64 /* Coordinator.swift */; };
+		A61675AC2A6F4FC500AF7F64 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675AB2A6F4FC500AF7F64 /* Coordinatable.swift */; };
+		A61675AE2A6F502700AF7F64 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675AD2A6F502700AF7F64 /* Configurator.swift */; };
+		A61675B52A6F512600AF7F64 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675B42A6F512600AF7F64 /* MainInteractor.swift */; };
+		A61675B72A6F51A600AF7F64 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675B62A6F51A600AF7F64 /* MainCoordinator.swift */; };
+		A61675B92A6F52BF00AF7F64 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675B82A6F52BF00AF7F64 /* MainPresenter.swift */; };
+		A61675BC2A6F531900AF7F64 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675BB2A6F531900AF7F64 /* Storyboard.swift */; };
+		A61675C22A6F546900AF7F64 /* FullScheduleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675C12A6F546900AF7F64 /* FullScheduleInteractor.swift */; };
+		A61675C42A6F548200AF7F64 /* FullSchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675C32A6F548200AF7F64 /* FullSchedulePresenter.swift */; };
+		A61675C62A6F549200AF7F64 /* FullScheduleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675C52A6F549200AF7F64 /* FullScheduleCoordinator.swift */; };
+		A61675C92A6F55DE00AF7F64 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675C82A6F55DE00AF7F64 /* AppCoordinator.swift */; };
+		A642AE382A636358009E8788 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE372A636358009E8788 /* AsyncOperation.swift */; };
+		A642AE3A2A6363EB009E8788 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE392A6363EB009E8788 /* DownloadOperation.swift */; };
+		A642AE3C2A636436009E8788 /* ImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE3B2A636436009E8788 /* ImageWrapper.swift */; };
+		A642AE3E2A637EBC009E8788 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE3D2A637EBC009E8788 /* ImageCache.swift */; };
+		A642AE402A638167009E8788 /* FSDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE3F2A638167009E8788 /* FSDetailViewController.swift */; };
+		A642AE422A639359009E8788 /* GetNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE412A639359009E8788 /* GetNews.swift */; };
+		A67159372A70726D0038F4BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A67159362A70726D0038F4BC /* GoogleService-Info.plist */; };
+		A67159392A7091330038F4BC /* MainViewModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67159382A7091330038F4BC /* MainViewModuleOutput.swift */; };
+		A671593B2A70993F0038F4BC /* MainModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671593A2A70993F0038F4BC /* MainModuleBuilder.swift */; };
+		A671593D2A709A9D0038F4BC /* FullScheduleModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671593C2A709A9D0038F4BC /* FullScheduleModuleBuilder.swift */; };
+		A671593F2A709F340038F4BC /* FSDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671593E2A709F340038F4BC /* FSDetailBuilder.swift */; };
+		A67159422A70A16C0038F4BC /* FSDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67159412A70A16C0038F4BC /* FSDetailCoordinator.swift */; };
+		A67159452A70A1E70038F4BC /* FSDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67159442A70A1E70038F4BC /* FSDetailInteractor.swift */; };
+		A67159482A70B1D10038F4BC /* FSDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67159472A70B1D10038F4BC /* FSDetailPresenter.swift */; };
+		A671594B2A70DC270038F4BC /* MyScheduleModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671594A2A70DC270038F4BC /* MyScheduleModuleBuilder.swift */; };
+		A671594E2A70DCAB0038F4BC /* MyScheduleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671594D2A70DCAB0038F4BC /* MyScheduleCoordinator.swift */; };
+		A67159512A70DD680038F4BC /* MyScheduleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67159502A70DD680038F4BC /* MyScheduleInteractor.swift */; };
+		A67159532A70DD9F0038F4BC /* MySchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67159522A70DD9F0038F4BC /* MySchedulePresenter.swift */; };
+		A67159562A70E72C0038F4BC /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67159552A70E72C0038F4BC /* DateExtention.swift */; };
+		A6AD35FB2A5EF16E00D9E883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD35FA2A5EF16E00D9E883 /* AppDelegate.swift */; };
+		A6AD35FD2A5EF16E00D9E883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD35FC2A5EF16E00D9E883 /* SceneDelegate.swift */; };
+		A6AD35FF2A5EF16E00D9E883 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD35FE2A5EF16E00D9E883 /* MainViewController.swift */; };
+		A6AD36022A5EF16E00D9E883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AD36002A5EF16E00D9E883 /* Main.storyboard */; };
+		A6AD36042A5EF17000D9E883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AD36032A5EF17000D9E883 /* Assets.xcassets */; };
+		A6AD36072A5EF17000D9E883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AD36052A5EF17000D9E883 /* LaunchScreen.storyboard */; };
+		A6AD362D2A5EFC6A00D9E883 /* FullScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD362C2A5EFC6A00D9E883 /* FullScheduleTableViewController.swift */; };
+		A6B42C6E2A649FAE006E27E2 /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B42C6D2A649FAE006E27E2 /* MyScheduleViewController.swift */; };
+		A6B42C732A64A17C006E27E2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6B42C712A64A17C006E27E2 /* Model.xcdatamodeld */; };
+		A6B42C762A64A6AD006E27E2 /* ScheduleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B42C752A64A6AD006E27E2 /* ScheduleFactory.swift */; };
+		A6B42C782A64A7F2006E27E2 /* ScheduleFactoryDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B42C772A64A7F2006E27E2 /* ScheduleFactoryDB.swift */; };
+		A6B42C7A2A64AD46006E27E2 /* ScheduleFactoryNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B42C792A64AD46006E27E2 /* ScheduleFactoryNet.swift */; };
+		A6B42C7C2A64C875006E27E2 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B42C7B2A64C875006E27E2 /* CoreDataService.swift */; };
+		A6B76D8D2A5F569D00386477 /* Networkclient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B76D8C2A5F569D00386477 /* Networkclient.swift */; };
+		A6B76D8F2A5F56E500386477 /* Networkcofiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B76D8E2A5F56E500386477 /* Networkcofiguration.swift */; };
+		A6B76D912A5F57BB00386477 /* GetSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B76D902A5F57BB00386477 /* GetSchedule.swift */; };
+		A6B76D932A5F57F900386477 /* SchedulePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B76D922A5F57F900386477 /* SchedulePosition.swift */; };
+		A6B76D952A5F5AE100386477 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B76D942A5F5AE000386477 /* Requests.swift */; };
+		A6B76D972A5F5D2100386477 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B76D962A5F5D2100386477 /* DI.swift */; };
+		A6B76D992A5F6D1900386477 /* ScheduleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B76D982A5F6D1900386477 /* ScheduleViewCell.swift */; };
+		A6D0244D2A6F15A30014CF15 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A6D0244C2A6F15A30014CF15 /* FirebaseAnalytics */; };
+		A6D0244F2A6F15A30014CF15 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = A6D0244E2A6F15A30014CF15 /* FirebaseCrashlytics */; };
+		A6F1545D2A6420F400140DC5 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1545C2A6420F400140DC5 /* NewsItem.swift */; };
+		A6F1545F2A642BAA00140DC5 /* StatisticsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1545E2A642BAA00140DC5 /* StatisticsItem.swift */; };
+		A6F154612A642D0A00140DC5 /* GetStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F154602A642D0A00140DC5 /* GetStatistics.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A61675A92A6F4FB100AF7F64 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A61675AB2A6F4FC500AF7F64 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		A61675AD2A6F502700AF7F64 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		A61675B42A6F512600AF7F64 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		A61675B62A6F51A600AF7F64 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A61675B82A6F52BF00AF7F64 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		A61675BB2A6F531900AF7F64 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		A61675C12A6F546900AF7F64 /* FullScheduleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScheduleInteractor.swift; sourceTree = "<group>"; };
+		A61675C32A6F548200AF7F64 /* FullSchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSchedulePresenter.swift; sourceTree = "<group>"; };
+		A61675C52A6F549200AF7F64 /* FullScheduleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScheduleCoordinator.swift; sourceTree = "<group>"; };
+		A61675C82A6F55DE00AF7F64 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A642AE372A636358009E8788 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		A642AE392A6363EB009E8788 /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
+		A642AE3B2A636436009E8788 /* ImageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWrapper.swift; sourceTree = "<group>"; };
+		A642AE3D2A637EBC009E8788 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		A642AE3F2A638167009E8788 /* FSDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDetailViewController.swift; sourceTree = "<group>"; };
+		A642AE412A639359009E8788 /* GetNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNews.swift; sourceTree = "<group>"; };
+		A67159362A70726D0038F4BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A67159382A7091330038F4BC /* MainViewModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModuleOutput.swift; sourceTree = "<group>"; };
+		A671593A2A70993F0038F4BC /* MainModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleBuilder.swift; sourceTree = "<group>"; };
+		A671593C2A709A9D0038F4BC /* FullScheduleModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScheduleModuleBuilder.swift; sourceTree = "<group>"; };
+		A671593E2A709F340038F4BC /* FSDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDetailBuilder.swift; sourceTree = "<group>"; };
+		A67159412A70A16C0038F4BC /* FSDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDetailCoordinator.swift; sourceTree = "<group>"; };
+		A67159442A70A1E70038F4BC /* FSDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDetailInteractor.swift; sourceTree = "<group>"; };
+		A67159472A70B1D10038F4BC /* FSDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDetailPresenter.swift; sourceTree = "<group>"; };
+		A671594A2A70DC270038F4BC /* MyScheduleModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleModuleBuilder.swift; sourceTree = "<group>"; };
+		A671594D2A70DCAB0038F4BC /* MyScheduleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleCoordinator.swift; sourceTree = "<group>"; };
+		A67159502A70DD680038F4BC /* MyScheduleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleInteractor.swift; sourceTree = "<group>"; };
+		A67159522A70DD9F0038F4BC /* MySchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchedulePresenter.swift; sourceTree = "<group>"; };
+		A67159552A70E72C0038F4BC /* DateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
+		A6AD35F72A5EF16E00D9E883 /* Anime Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anime Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AD35FA2A5EF16E00D9E883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6AD35FC2A5EF16E00D9E883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6AD35FE2A5EF16E00D9E883 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A6AD36012A5EF16E00D9E883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6AD36032A5EF17000D9E883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6AD36062A5EF17000D9E883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6AD36082A5EF17000D9E883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6AD362C2A5EFC6A00D9E883 /* FullScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScheduleTableViewController.swift; sourceTree = "<group>"; };
+		A6B42C6D2A649FAE006E27E2 /* MyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
+		A6B42C722A64A17C006E27E2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A6B42C752A64A6AD006E27E2 /* ScheduleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleFactory.swift; sourceTree = "<group>"; };
+		A6B42C772A64A7F2006E27E2 /* ScheduleFactoryDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleFactoryDB.swift; sourceTree = "<group>"; };
+		A6B42C792A64AD46006E27E2 /* ScheduleFactoryNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleFactoryNet.swift; sourceTree = "<group>"; };
+		A6B42C7B2A64C875006E27E2 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		A6B76D8C2A5F569D00386477 /* Networkclient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkclient.swift; sourceTree = "<group>"; };
+		A6B76D8E2A5F56E500386477 /* Networkcofiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkcofiguration.swift; sourceTree = "<group>"; };
+		A6B76D902A5F57BB00386477 /* GetSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSchedule.swift; sourceTree = "<group>"; };
+		A6B76D922A5F57F900386477 /* SchedulePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePosition.swift; sourceTree = "<group>"; };
+		A6B76D942A5F5AE000386477 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		A6B76D962A5F5D2100386477 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		A6B76D982A5F6D1900386477 /* ScheduleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewCell.swift; sourceTree = "<group>"; };
+		A6F1545C2A6420F400140DC5 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		A6F1545E2A642BAA00140DC5 /* StatisticsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsItem.swift; sourceTree = "<group>"; };
+		A6F154602A642D0A00140DC5 /* GetStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStatistics.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6AD35F42A5EF16E00D9E883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D0244D2A6F15A30014CF15 /* FirebaseAnalytics in Frameworks */,
+				A6D0244F2A6F15A30014CF15 /* FirebaseCrashlytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A61675A82A6F4F9F00AF7F64 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A61675A92A6F4FB100AF7F64 /* Coordinator.swift */,
+				A61675AB2A6F4FC500AF7F64 /* Coordinatable.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A61675AF2A6F508700AF7F64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD35FE2A5EF16E00D9E883 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A61675B02A6F50A700AF7F64 /* Interator */ = {
+			isa = PBXGroup;
+			children = (
+				A61675B42A6F512600AF7F64 /* MainInteractor.swift */,
+			);
+			path = Interator;
+			sourceTree = "<group>";
+		};
+		A61675B12A6F50B300AF7F64 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A61675B82A6F52BF00AF7F64 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A61675B22A6F50BE00AF7F64 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A61675B62A6F51A600AF7F64 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A61675BA2A6F530400AF7F64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A61675BB2A6F531900AF7F64 /* Storyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A61675BD2A6F542100AF7F64 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A61675C52A6F549200AF7F64 /* FullScheduleCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A61675BE2A6F542A00AF7F64 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A61675C32A6F548200AF7F64 /* FullSchedulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A61675BF2A6F543100AF7F64 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A61675C12A6F546900AF7F64 /* FullScheduleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A61675C02A6F544100AF7F64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD362C2A5EFC6A00D9E883 /* FullScheduleTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A61675C72A6F55D300AF7F64 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A61675C82A6F55DE00AF7F64 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A67159402A70A1540038F4BC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A67159412A70A16C0038F4BC /* FSDetailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A67159432A70A1D80038F4BC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A67159442A70A1E70038F4BC /* FSDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A67159462A70B1C00038F4BC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A67159472A70B1D10038F4BC /* FSDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A67159492A70DC0B0038F4BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6B42C6D2A649FAE006E27E2 /* MyScheduleViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A671594C2A70DC840038F4BC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A671594D2A70DCAB0038F4BC /* MyScheduleCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A671594F2A70DD5C0038F4BC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A67159502A70DD680038F4BC /* MyScheduleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A67159542A70DDA70038F4BC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A67159522A70DD9F0038F4BC /* MySchedulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A6AD35EE2A5EF16E00D9E883 = {
+			isa = PBXGroup;
+			children = (
+				A6AD35F92A5EF16E00D9E883 /* AnimeScheduler */,
+				A6AD35F82A5EF16E00D9E883 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6AD35F82A5EF16E00D9E883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD35F72A5EF16E00D9E883 /* Anime Scheduler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6AD35F92A5EF16E00D9E883 /* AnimeScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				A61675C72A6F55D300AF7F64 /* App */,
+				A61675BA2A6F530400AF7F64 /* Extensions */,
+				A6D024562A6F27D40014CF15 /* Services */,
+				A6D024552A6F27A70014CF15 /* DataModels */,
+				A6B42C742A64A56A006E27E2 /* ScheduleFactory */,
+				A6B42C702A649FF7006E27E2 /* Network */,
+				A6B42C6F2A649FC8006E27E2 /* Views */,
+				A6AD35FA2A5EF16E00D9E883 /* AppDelegate.swift */,
+				A6AD35FC2A5EF16E00D9E883 /* SceneDelegate.swift */,
+				A6AD36002A5EF16E00D9E883 /* Main.storyboard */,
+				A6AD36032A5EF17000D9E883 /* Assets.xcassets */,
+				A6AD36052A5EF17000D9E883 /* LaunchScreen.storyboard */,
+				A6AD36082A5EF17000D9E883 /* Info.plist */,
+				A67159362A70726D0038F4BC /* GoogleService-Info.plist */,
+			);
+			path = AnimeScheduler;
+			sourceTree = "<group>";
+		};
+		A6B42C6F2A649FC8006E27E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6D024542A6F27900014CF15 /* Full Schedule Detail View */,
+				A6D024532A6F27770014CF15 /* My Schedule View */,
+				A6D024522A6F275F0014CF15 /* Full Schedule Table View */,
+				A6D024512A6F27550014CF15 /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6B42C702A649FF7006E27E2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A642AE372A636358009E8788 /* AsyncOperation.swift */,
+				A642AE392A6363EB009E8788 /* DownloadOperation.swift */,
+				A6B76D902A5F57BB00386477 /* GetSchedule.swift */,
+				A642AE412A639359009E8788 /* GetNews.swift */,
+				A6F154602A642D0A00140DC5 /* GetStatistics.swift */,
+				A6B76D942A5F5AE000386477 /* Requests.swift */,
+				A6B76D8C2A5F569D00386477 /* Networkclient.swift */,
+				A6B76D8E2A5F56E500386477 /* Networkcofiguration.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A6B42C742A64A56A006E27E2 /* ScheduleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				A6B42C772A64A7F2006E27E2 /* ScheduleFactoryDB.swift */,
+				A6B42C792A64AD46006E27E2 /* ScheduleFactoryNet.swift */,
+				A6B42C752A64A6AD006E27E2 /* ScheduleFactory.swift */,
+			);
+			path = ScheduleFactory;
+			sourceTree = "<group>";
+		};
+		A6D024512A6F27550014CF15 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				A671593A2A70993F0038F4BC /* MainModuleBuilder.swift */,
+				A61675AF2A6F508700AF7F64 /* View */,
+				A61675B12A6F50B300AF7F64 /* Presenter */,
+				A61675B02A6F50A700AF7F64 /* Interator */,
+				A61675B22A6F50BE00AF7F64 /* Coordinator */,
+				A67159382A7091330038F4BC /* MainViewModuleOutput.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		A6D024522A6F275F0014CF15 /* Full Schedule Table View */ = {
+			isa = PBXGroup;
+			children = (
+				A61675C02A6F544100AF7F64 /* View */,
+				A61675BF2A6F543100AF7F64 /* Interactor */,
+				A61675BE2A6F542A00AF7F64 /* Presenter */,
+				A61675BD2A6F542100AF7F64 /* Coordinator */,
+				A6B76D982A5F6D1900386477 /* ScheduleViewCell.swift */,
+				A671593C2A709A9D0038F4BC /* FullScheduleModuleBuilder.swift */,
+			);
+			path = "Full Schedule Table View";
+			sourceTree = "<group>";
+		};
+		A6D024532A6F27770014CF15 /* My Schedule View */ = {
+			isa = PBXGroup;
+			children = (
+				A67159542A70DDA70038F4BC /* Presenter */,
+				A671594F2A70DD5C0038F4BC /* Interactor */,
+				A671594C2A70DC840038F4BC /* Coordinator */,
+				A67159492A70DC0B0038F4BC /* View */,
+				A671594A2A70DC270038F4BC /* MyScheduleModuleBuilder.swift */,
+			);
+			path = "My Schedule View";
+			sourceTree = "<group>";
+		};
+		A6D024542A6F27900014CF15 /* Full Schedule Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				A67159462A70B1C00038F4BC /* Presenter */,
+				A67159432A70A1D80038F4BC /* Interactor */,
+				A67159402A70A1540038F4BC /* Coordinator */,
+				A6D024572A6F29070014CF15 /* View */,
+				A671593E2A709F340038F4BC /* FSDetailBuilder.swift */,
+			);
+			path = "Full Schedule Detail View";
+			sourceTree = "<group>";
+		};
+		A6D024552A6F27A70014CF15 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				A61675A82A6F4F9F00AF7F64 /* Coordinator */,
+				A6F1545E2A642BAA00140DC5 /* StatisticsItem.swift */,
+				A6F1545C2A6420F400140DC5 /* NewsItem.swift */,
+				A6B76D922A5F57F900386477 /* SchedulePosition.swift */,
+				A642AE3D2A637EBC009E8788 /* ImageCache.swift */,
+				A6B42C712A64A17C006E27E2 /* Model.xcdatamodeld */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		A6D024562A6F27D40014CF15 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A67159552A70E72C0038F4BC /* DateExtention.swift */,
+				A642AE3B2A636436009E8788 /* ImageWrapper.swift */,
+				A6B76D962A5F5D2100386477 /* DI.swift */,
+				A6B42C7B2A64C875006E27E2 /* CoreDataService.swift */,
+				A61675AD2A6F502700AF7F64 /* Configurator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A6D024572A6F29070014CF15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A642AE3F2A638167009E8788 /* FSDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6AD35F62A5EF16E00D9E883 /* Anime Scheduler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6AD36212A5EF17000D9E883 /* Build configuration list for PBXNativeTarget "Anime Scheduler" */;
+			buildPhases = (
+				A6AD35F32A5EF16E00D9E883 /* Sources */,
+				A6AD35F42A5EF16E00D9E883 /* Frameworks */,
+				A6AD35F52A5EF16E00D9E883 /* Resources */,
+				A6D024502A6F170B0014CF15 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Anime Scheduler";
+			packageProductDependencies = (
+				A6D0244C2A6F15A30014CF15 /* FirebaseAnalytics */,
+				A6D0244E2A6F15A30014CF15 /* FirebaseCrashlytics */,
+			);
+			productName = OTUSAPI;
+			productReference = A6AD35F72A5EF16E00D9E883 /* Anime Scheduler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6AD35EF2A5EF16E00D9E883 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A6AD35F62A5EF16E00D9E883 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = A6AD35F22A5EF16E00D9E883 /* Build configuration list for PBXProject "Anime Scheduler" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6AD35EE2A5EF16E00D9E883;
+			packageReferences = (
+				A6D0244B2A6F15A30014CF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A6AD35F82A5EF16E00D9E883 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6AD35F62A5EF16E00D9E883 /* Anime Scheduler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6AD35F52A5EF16E00D9E883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AD36072A5EF17000D9E883 /* LaunchScreen.storyboard in Resources */,
+				A67159372A70726D0038F4BC /* GoogleService-Info.plist in Resources */,
+				A6AD36042A5EF17000D9E883 /* Assets.xcassets in Resources */,
+				A6AD36022A5EF16E00D9E883 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6D024502A6F170B0014CF15 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6AD35F32A5EF16E00D9E883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B42C7A2A64AD46006E27E2 /* ScheduleFactoryNet.swift in Sources */,
+				A671593D2A709A9D0038F4BC /* FullScheduleModuleBuilder.swift in Sources */,
+				A642AE3E2A637EBC009E8788 /* ImageCache.swift in Sources */,
+				A6AD35FF2A5EF16E00D9E883 /* MainViewController.swift in Sources */,
+				A642AE402A638167009E8788 /* FSDetailViewController.swift in Sources */,
+				A61675C42A6F548200AF7F64 /* FullSchedulePresenter.swift in Sources */,
+				A67159422A70A16C0038F4BC /* FSDetailCoordinator.swift in Sources */,
+				A642AE3A2A6363EB009E8788 /* DownloadOperation.swift in Sources */,
+				A6AD35FB2A5EF16E00D9E883 /* AppDelegate.swift in Sources */,
+				A642AE3C2A636436009E8788 /* ImageWrapper.swift in Sources */,
+				A6B76D8F2A5F56E500386477 /* Networkcofiguration.swift in Sources */,
+				A6F1545D2A6420F400140DC5 /* NewsItem.swift in Sources */,
+				A6F1545F2A642BAA00140DC5 /* StatisticsItem.swift in Sources */,
+				A6B42C732A64A17C006E27E2 /* Model.xcdatamodeld in Sources */,
+				A6B76D952A5F5AE100386477 /* Requests.swift in Sources */,
+				A6B76D932A5F57F900386477 /* SchedulePosition.swift in Sources */,
+				A61675C92A6F55DE00AF7F64 /* AppCoordinator.swift in Sources */,
+				A61675C62A6F549200AF7F64 /* FullScheduleCoordinator.swift in Sources */,
+				A61675B52A6F512600AF7F64 /* MainInteractor.swift in Sources */,
+				A61675B72A6F51A600AF7F64 /* MainCoordinator.swift in Sources */,
+				A67159392A7091330038F4BC /* MainViewModuleOutput.swift in Sources */,
+				A67159512A70DD680038F4BC /* MyScheduleInteractor.swift in Sources */,
+				A671594B2A70DC270038F4BC /* MyScheduleModuleBuilder.swift in Sources */,
+				A671593F2A709F340038F4BC /* FSDetailBuilder.swift in Sources */,
+				A6B42C6E2A649FAE006E27E2 /* MyScheduleViewController.swift in Sources */,
+				A6B42C7C2A64C875006E27E2 /* CoreDataService.swift in Sources */,
+				A67159562A70E72C0038F4BC /* DateExtention.swift in Sources */,
+				A61675B92A6F52BF00AF7F64 /* MainPresenter.swift in Sources */,
+				A671593B2A70993F0038F4BC /* MainModuleBuilder.swift in Sources */,
+				A61675AC2A6F4FC500AF7F64 /* Coordinatable.swift in Sources */,
+				A6B76D912A5F57BB00386477 /* GetSchedule.swift in Sources */,
+				A61675AA2A6F4FB100AF7F64 /* Coordinator.swift in Sources */,
+				A67159532A70DD9F0038F4BC /* MySchedulePresenter.swift in Sources */,
+				A6B76D992A5F6D1900386477 /* ScheduleViewCell.swift in Sources */,
+				A61675AE2A6F502700AF7F64 /* Configurator.swift in Sources */,
+				A6F154612A642D0A00140DC5 /* GetStatistics.swift in Sources */,
+				A6AD35FD2A5EF16E00D9E883 /* SceneDelegate.swift in Sources */,
+				A6B42C762A64A6AD006E27E2 /* ScheduleFactory.swift in Sources */,
+				A6AD362D2A5EFC6A00D9E883 /* FullScheduleTableViewController.swift in Sources */,
+				A642AE422A639359009E8788 /* GetNews.swift in Sources */,
+				A6B76D972A5F5D2100386477 /* DI.swift in Sources */,
+				A67159452A70A1E70038F4BC /* FSDetailInteractor.swift in Sources */,
+				A67159482A70B1D10038F4BC /* FSDetailPresenter.swift in Sources */,
+				A61675BC2A6F531900AF7F64 /* Storyboard.swift in Sources */,
+				A6B42C782A64A7F2006E27E2 /* ScheduleFactoryDB.swift in Sources */,
+				A642AE382A636358009E8788 /* AsyncOperation.swift in Sources */,
+				A6B76D8D2A5F569D00386477 /* Networkclient.swift in Sources */,
+				A61675C22A6F546900AF7F64 /* FullScheduleInteractor.swift in Sources */,
+				A671594E2A70DCAB0038F4BC /* MyScheduleCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6AD36002A5EF16E00D9E883 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6AD36012A5EF16E00D9E883 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6AD36052A5EF17000D9E883 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6AD36062A5EF17000D9E883 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6AD361F2A5EF17000D9E883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6AD36202A5EF17000D9E883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6AD36222A5EF17000D9E883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XAX84T33B6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimeScheduler/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dimchich.anime-scheduler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6AD36232A5EF17000D9E883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XAX84T33B6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimeScheduler/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dimchich.anime-scheduler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6AD35F22A5EF16E00D9E883 /* Build configuration list for PBXProject "Anime Scheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6AD361F2A5EF17000D9E883 /* Debug */,
+				A6AD36202A5EF17000D9E883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6AD36212A5EF17000D9E883 /* Build configuration list for PBXNativeTarget "Anime Scheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6AD36222A5EF17000D9E883 /* Debug */,
+				A6AD36232A5EF17000D9E883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6D0244B2A6F15A30014CF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6D0244C2A6F15A30014CF15 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6D0244B2A6F15A30014CF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A6D0244E2A6F15A30014CF15 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6D0244B2A6F15A30014CF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A6B42C712A64A17C006E27E2 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6B42C722A64A17C006E27E2 /* Model.xcdatamodel */,
+			);
+			currentVersion = A6B42C722A64A17C006E27E2 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6AD35EF2A5EF16E00D9E883 /* Project object */;
+}
