@@ -11,7 +11,6 @@ import UIKit
 final class FSDetailModuleBuider {
     static func buid(output: AnyObject?) -> UIViewController{
         let controller: FSDetailViewController = Storyboard.defaultStoryboard.buildViewController()
-        //controller.output = output
         Configurator.configure(viewController: controller)
         return controller
     }
