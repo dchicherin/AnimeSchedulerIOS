@@ -35,10 +35,6 @@ class FSDetailViewController: UIViewController {
         if(selectedPosition != nil){
             interactor?.checkData(schedulePosition: selectedPosition!)
         }
-        //addButtonShadow(buttonToMod: viewMALButton)
-        //addButtonShadow(buttonToMod: addToWatchButton)
-        //addButtonShadow(buttonToMod: getStatisticsButton)
-        //addButtonShadow(buttonToMod: showNewsButton)
     }
     @IBAction func OpenMALTouchUpInside(_ sender: Any) {
         //Переход на сайт с подробной информацией
