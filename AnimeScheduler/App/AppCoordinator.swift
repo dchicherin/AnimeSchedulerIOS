@@ -24,7 +24,7 @@ class AppCoordinator: Coordinator {
     }
 
     func start() {
-        let startup = MainCoordinator(controller: navController)
+        let startup = FullScheduleCoordinator(controller: navController)
         startup.start()
 
         uiWindow?.rootViewController = navController

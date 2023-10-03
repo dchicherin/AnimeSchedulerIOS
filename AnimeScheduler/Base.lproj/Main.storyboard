@@ -12,7 +12,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="OTUSAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Anime_Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,20 +115,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867.93893129770993" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="-54" y="-35"/>
         </scene>
-        <!--Full Schedule Table View Controller-->
+        <!--Item-->
         <scene sceneID="swa-c6-vsm">
             <objects>
-                <tableViewController storyboardIdentifier="FullScheduleTableViewController" id="zaO-8G-5d4" customClass="FullScheduleTableViewController" customModule="OTUSAPI" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="U9F-kV-kNn">
+                <tableViewController storyboardIdentifier="FullScheduleTableViewController" id="zaO-8G-5d4" customClass="FullScheduleTableViewController" customModule="Anime_Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" id="U9F-kV-kNn">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexTrackingBackgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="300" reuseIdentifier="ScheduleViewCell" rowHeight="109" id="Sak-El-nln" customClass="ScheduleViewCell" customModule="OTUSAPI" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="300" reuseIdentifier="ScheduleViewCell" rowHeight="109" id="Sak-El-nln" customClass="ScheduleViewCell" customModule="Anime_Scheduler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="430" height="109"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sak-El-nln" id="Uyl-5q-gn7">
@@ -136,27 +134,26 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anime name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-Ch-clC">
-                                            <rect key="frame" x="104" y="23" width="289" height="22.333333333333329"/>
+                                            <rect key="frame" x="104" y="23" width="289" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" systemColor="labelColor"/>
-                                            <size key="shadowOffset" width="1" height="1"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhO-E8-9K6">
                                             <rect key="frame" x="104" y="62.666666666666664" width="289" height="20.333333333333336"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" systemColor="labelColor"/>
-                                            <size key="shadowOffset" width="1" height="1"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oml-PS-mJy">
                                             <rect key="frame" x="0.0" y="11" width="85" height="85"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="cbJ-Ch-clC" secondAttribute="trailing" constant="37" id="0aa-qU-sxf"/>
                                         <constraint firstAttribute="bottom" secondItem="UhO-E8-9K6" secondAttribute="bottom" constant="26" id="53l-4A-37I"/>
@@ -179,16 +176,17 @@
                             <outlet property="delegate" destination="zaO-8G-5d4" id="2O9-0P-hbM"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="X2q-MR-smv"/>
                     <navigationItem key="navigationItem" id="evD-6t-aIm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMu-92-Rpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1667.9389312977098" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="2566.046511627907" y="-35.407725321888414"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="fgQ-yE-2O5">
             <objects>
-                <viewController storyboardIdentifier="FSDetailViewController" id="s4z-aY-PRU" customClass="FSDetailViewController" customModule="OTUSAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FSDetailViewController" id="s4z-aY-PRU" customClass="FSDetailViewController" customModule="Anime_Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6VH-oU-qS3">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -318,19 +316,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhB-FE-nkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2390.2325581395348" y="-36.051502145922747"/>
+            <point key="canvasLocation" x="3288.8372093023254" y="-36.051502145922747"/>
         </scene>
         <!--My Schedule View Controller-->
         <scene sceneID="ynW-8J-oBJ">
             <objects>
-                <tableViewController storyboardIdentifier="MyScheduleViewController" id="kxk-71-8ga" customClass="MyScheduleViewController" customModule="OTUSAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MyScheduleViewController" id="kxk-71-8ga" customClass="MyScheduleViewController" customModule="Anime_Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fYI-Ux-rR0">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="300" reuseIdentifier="ScheduleViewCell" rowHeight="109" id="SDg-iM-aW1" customClass="ScheduleViewCell" customModule="OTUSAPI" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="300" reuseIdentifier="ScheduleViewCell" rowHeight="109" id="SDg-iM-aW1" customClass="ScheduleViewCell" customModule="Anime_Scheduler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="430" height="109"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SDg-iM-aW1" id="K1S-Rp-zjS">
@@ -385,7 +383,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3y-Tq-8qY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1667.4418604651162" y="701.71673819742489"/>
+            <point key="canvasLocation" x="2566" y="686"/>
         </scene>
     </scenes>
     <resources>
