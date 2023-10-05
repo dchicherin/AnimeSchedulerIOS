@@ -45,6 +45,7 @@ class FullScheduleTableViewController: UITableViewController{
         let image = UIImage(systemName: "heart", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
         buttonFS.setImage(image, for: .normal)
         buttonFS.tintColor = .white
+        buttonFS.addTarget(self, action: #selector(moveToMySchedule), for: .touchUpInside)
         return buttonFS
     }()
     private let buttonSettings: UIButton = {
@@ -108,6 +109,9 @@ class FullScheduleTableViewController: UITableViewController{
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         interactor?.moveToSchedule(schedulePosition: schedulePositions[indexPath.row])
+    }
+    @objc func moveToMySchedule(sender: UIButton!) {
+        output?.moveToMySchedule()
     }
 }
 

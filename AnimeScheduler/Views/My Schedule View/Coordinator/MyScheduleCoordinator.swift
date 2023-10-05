@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+protocol MyScheduleModuleOuput: AnyObject {
+    func moveToFullSchedule()
+}
 class MyScheduleCoordinator: Coordinator {
     var parent: Coordinator? = nil
     var child: [Coordinator] = []
@@ -19,7 +22,16 @@ class MyScheduleCoordinator: Coordinator {
     }
 
     func start() {
-        let controller = MyScheduleModuleBuilder.buid()
-        navController.show(controller, sender: self)
+        let controller = MyScheduleModuleBuilder.buid(output: self)
+        //navController.show(controller, sender: self)
+        navController.pushViewController(controller, animated: false)
+    }
+}
+extension MyScheduleCoordinator: MyScheduleModuleOuput {
+    func moveToFullSchedule() {
+        let myScheduleCoordinator = FullScheduleCoordinator(controller: navController)
+        myScheduleCoordinator.start()
+        print(child)
+        child.append(myScheduleCoordinator)
     }
 }

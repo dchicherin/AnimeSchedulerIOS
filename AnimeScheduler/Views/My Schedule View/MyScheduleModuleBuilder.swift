@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 final class MyScheduleModuleBuilder {
-    static func buid() -> UIViewController{
+    static func buid(output: MyScheduleModuleOuput?) -> UIViewController{
         let controller: MyScheduleViewController = Storyboard.defaultStoryboard.buildViewController()
+        controller.output = output
         Configurator.configure(viewController: controller)
         return controller
     }

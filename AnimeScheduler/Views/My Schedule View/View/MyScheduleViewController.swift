@@ -21,13 +21,60 @@ class MyScheduleViewController: UITableViewController{
     var imagesDict: [Int64: UIImage] = [:]
     var rowsDictionary: [Int64: Int] = [:]
     var interactor: MyScheduleInteractorInput?
+    weak var output: MyScheduleModuleOuput?
     
-    
+    //Additional elements
+    private let bottomNavBar: UIView = {
+        //View to show on screen when no tasks are present
+        let view = UIView()
+        view.backgroundColor = #colorLiteral(red: 0.6549019608, green: 0.5098039216, blue: 0.9254901961, alpha: 1)
+        return view
+    }()
+    private let buttonFS: UIButton = {
+        //Creating a floating button
+        let buttonFS = UIButton(frame: CGRect(x: 40, y: 5, width: 60, height: 60))
+        buttonFS.layer.masksToBounds = true
+        let image = UIImage(systemName: "list.bullet.rectangle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
+        buttonFS.setImage(image, for: .normal)
+        buttonFS.tintColor = .white
+        buttonFS.addTarget(self, action: #selector(moveToFullSchedule), for: .touchUpInside)
+        return buttonFS
+    }()
+    private let buttonMS: UIButton = {
+        //Creating a floating button
+        let buttonFS = UIButton(frame: CGRect(x: 40, y: 5, width: 60, height: 60))
+        buttonFS.layer.masksToBounds = true
+        let image = UIImage(systemName: "heart", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
+        buttonFS.setImage(image, for: .normal)
+        buttonFS.tintColor = .white
+        
+        return buttonFS
+    }()
+    private let buttonSettings: UIButton = {
+        //Creating a floating button
+        let buttonFS = UIButton(frame: CGRect(x: 40, y: 5, width: 60, height: 60))
+        buttonFS.layer.masksToBounds = true
+        let image = UIImage(systemName: "gear", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
+        buttonFS.setImage(image, for: .normal)
+        buttonFS.tintColor = .white
+        return buttonFS
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 100.0
         interactor?.getScheduleData()
+        bottomNavBar.frame = CGRect(x: 0, y: view.frame.size.height - 120, width: view.frame.size.width, height: 80)
+        
+        bottomNavBar.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(bottomNavBar)
+        bottomNavBar.addSubview(buttonFS)
+        bottomNavBar.addSubview(buttonMS)
+        bottomNavBar.addSubview(buttonSettings)
+        buttonMS.frame =  CGRect(x: view.frame.size.width/2 - 30, y: 5, width: 60, height: 60)
+        buttonSettings.frame = CGRect(x: view.frame.size.width - 100, y: 5, width: 60, height: 60)
+        //removing nav bar
+        self.navigationController?.isNavigationBarHidden = true
     }
     // MARK: - Table view data source
 
@@ -35,7 +82,11 @@ class MyScheduleViewController: UITableViewController{
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        //Making scroll button stay in place
+        let offset = scrollView.contentOffset.y
+        bottomNavBar.frame = CGRect(x: 0, y: view.frame.size.height - 85 + offset, width: view.frame.size.width, height: 85)
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return schedulePositions.count
@@ -65,6 +116,9 @@ class MyScheduleViewController: UITableViewController{
             handler(true)
         }
         return UISwipeActionsConfiguration(actions: [delete])
+    }
+    @objc func moveToFullSchedule(sender: UIButton!) {
+        output?.moveToFullSchedule()
     }
 }
 

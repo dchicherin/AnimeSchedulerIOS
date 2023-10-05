@@ -325,8 +325,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fYI-Ux-rR0">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="300" reuseIdentifier="ScheduleViewCell" rowHeight="109" id="SDg-iM-aW1" customClass="ScheduleViewCell" customModule="Anime_Scheduler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="430" height="109"/>
@@ -338,25 +337,24 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anime name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vc-YD-AEf">
                                             <rect key="frame" x="104" y="23" width="306" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <color key="textColor" systemColor="systemGray6Color"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" systemColor="labelColor"/>
-                                            <size key="shadowOffset" width="1" height="1"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXc-jt-UeL">
                                             <rect key="frame" x="104" y="62" width="289" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <color key="textColor" systemColor="systemGray6Color"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" systemColor="labelColor"/>
-                                            <size key="shadowOffset" width="1" height="1"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wsx-ap-NAd">
                                             <rect key="frame" x="0.0" y="11" width="85" height="85"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="bXc-jt-UeL" firstAttribute="leading" secondItem="K1S-Rp-zjS" secondAttribute="leading" constant="104" id="GV9-1K-e7S"/>
                                         <constraint firstAttribute="trailing" secondItem="bXc-jt-UeL" secondAttribute="trailing" constant="37" id="Ing-nZ-5xc"/>
@@ -366,7 +364,6 @@
                                         <constraint firstItem="6vc-YD-AEf" firstAttribute="top" secondItem="K1S-Rp-zjS" secondAttribute="top" constant="23" id="iTA-vg-PY3"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.65490196079999996" green="0.50980392159999999" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="NameLabel" destination="6vc-YD-AEf" id="qjh-Yd-2nY"/>
                                     <outlet property="imageView" destination="Wsx-ap-NAd" id="SEO-D4-3JU"/>
@@ -398,9 +395,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
