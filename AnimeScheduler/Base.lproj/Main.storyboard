@@ -382,6 +382,42 @@
             </objects>
             <point key="canvasLocation" x="2566" y="686"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wkO-Ow-JxR">
+            <objects>
+                <viewController id="CB9-jV-S4U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XOK-kQ-v7c">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWn-2f-Bxo">
+                                <rect key="frame" x="50" y="179" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show added anime from previous season" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-qx-ZNT">
+                                <rect key="frame" x="119" y="168" width="192" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="ZfO-y3-JXv"/>
+                                    <constraint firstAttribute="height" constant="53" id="aFW-6r-C6D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r3f-Eo-T6A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HWn-2f-Bxo" firstAttribute="top" secondItem="r3f-Eo-T6A" secondAttribute="top" constant="120" id="8K3-d1-mj5"/>
+                            <constraint firstItem="HWn-2f-Bxo" firstAttribute="leading" secondItem="r3f-Eo-T6A" secondAttribute="leading" constant="50" id="P7j-OC-YtO"/>
+                            <constraint firstItem="t0D-qx-ZNT" firstAttribute="leading" secondItem="HWn-2f-Bxo" secondAttribute="trailing" constant="20" id="TzL-hb-31o"/>
+                            <constraint firstItem="t0D-qx-ZNT" firstAttribute="top" secondItem="r3f-Eo-T6A" secondAttribute="top" constant="109" id="mpd-ra-Mcc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydd-3q-ro3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2553.4883720930234" y="1373.8197424892705"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="labelColor">
