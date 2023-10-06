@@ -57,6 +57,7 @@ class MyScheduleViewController: UITableViewController{
         let image = UIImage(systemName: "gear", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
         buttonFS.setImage(image, for: .normal)
         buttonFS.tintColor = .white
+        buttonFS.addTarget(self, action: #selector(moveToSettings), for: .touchUpInside)
         return buttonFS
     }()
     
@@ -119,6 +120,9 @@ class MyScheduleViewController: UITableViewController{
     }
     @objc func moveToFullSchedule(sender: UIButton!) {
         output?.moveToFullSchedule()
+    }
+    @objc func moveToSettings(sender: UIButton!) {
+        output?.moveToSettings()
     }
 }
 

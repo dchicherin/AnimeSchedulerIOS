@@ -30,6 +30,11 @@ class Configurator {
             let interactor = MyScheduleInteractor(presenter: presenter)
             
             controller.interactor = interactor
+        }else if let controller = viewController as? SettingsViewController {
+            let presenter = SettingsPresenter(controller: controller)
+            let interactor = SettingsInteractor(presenter: presenter)
+            
+            controller.interactor = interactor
         }
     }
 }

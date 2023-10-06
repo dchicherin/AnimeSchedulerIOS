@@ -18,12 +18,17 @@
 		A61675C42A6F548200AF7F64 /* FullSchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675C32A6F548200AF7F64 /* FullSchedulePresenter.swift */; };
 		A61675C62A6F549200AF7F64 /* FullScheduleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675C52A6F549200AF7F64 /* FullScheduleCoordinator.swift */; };
 		A61675C92A6F55DE00AF7F64 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61675C82A6F55DE00AF7F64 /* AppCoordinator.swift */; };
+		A63FB2122AD0282F00F3B437 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63FB2112AD0282F00F3B437 /* SettingsViewController.swift */; };
 		A642AE382A636358009E8788 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE372A636358009E8788 /* AsyncOperation.swift */; };
 		A642AE3A2A6363EB009E8788 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE392A6363EB009E8788 /* DownloadOperation.swift */; };
 		A642AE3C2A636436009E8788 /* ImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE3B2A636436009E8788 /* ImageWrapper.swift */; };
 		A642AE3E2A637EBC009E8788 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE3D2A637EBC009E8788 /* ImageCache.swift */; };
 		A642AE402A638167009E8788 /* FSDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE3F2A638167009E8788 /* FSDetailViewController.swift */; };
 		A642AE422A639359009E8788 /* GetNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642AE412A639359009E8788 /* GetNews.swift */; };
+		A66449E62AD08FF000E52684 /* SettingsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66449E52AD08FF000E52684 /* SettingsModuleBuilder.swift */; };
+		A66449E92AD0924200E52684 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66449E82AD0924200E52684 /* SettingsCoordinator.swift */; };
+		A66449ED2AD0934500E52684 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66449EC2AD0934500E52684 /* SettingsInteractor.swift */; };
+		A66449EF2AD0946E00E52684 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66449EE2AD0946E00E52684 /* SettingsPresenter.swift */; };
 		A67159372A70726D0038F4BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A67159362A70726D0038F4BC /* GoogleService-Info.plist */; };
 		A67159392A7091330038F4BC /* MainViewModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67159382A7091330038F4BC /* MainViewModuleOutput.swift */; };
 		A671593B2A70993F0038F4BC /* MainModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671593A2A70993F0038F4BC /* MainModuleBuilder.swift */; };
@@ -76,12 +81,17 @@
 		A61675C32A6F548200AF7F64 /* FullSchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSchedulePresenter.swift; sourceTree = "<group>"; };
 		A61675C52A6F549200AF7F64 /* FullScheduleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScheduleCoordinator.swift; sourceTree = "<group>"; };
 		A61675C82A6F55DE00AF7F64 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A63FB2112AD0282F00F3B437 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A642AE372A636358009E8788 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		A642AE392A6363EB009E8788 /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
 		A642AE3B2A636436009E8788 /* ImageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWrapper.swift; sourceTree = "<group>"; };
 		A642AE3D2A637EBC009E8788 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A642AE3F2A638167009E8788 /* FSDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDetailViewController.swift; sourceTree = "<group>"; };
 		A642AE412A639359009E8788 /* GetNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNews.swift; sourceTree = "<group>"; };
+		A66449E52AD08FF000E52684 /* SettingsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleBuilder.swift; sourceTree = "<group>"; };
+		A66449E82AD0924200E52684 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		A66449EC2AD0934500E52684 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		A66449EE2AD0946E00E52684 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		A67159362A70726D0038F4BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A67159382A7091330038F4BC /* MainViewModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModuleOutput.swift; sourceTree = "<group>"; };
 		A671593A2A70993F0038F4BC /* MainModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleBuilder.swift; sourceTree = "<group>"; };
@@ -224,6 +234,50 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		A63FB20F2AD027F300F3B437 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				A66449EB2AD0931900E52684 /* Presenter */,
+				A66449EA2AD0931100E52684 /* Interactor */,
+				A66449E72AD0922D00E52684 /* Coordinator */,
+				A63FB2102AD0280D00F3B437 /* View */,
+				A66449E52AD08FF000E52684 /* SettingsModuleBuilder.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		A63FB2102AD0280D00F3B437 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A63FB2112AD0282F00F3B437 /* SettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A66449E72AD0922D00E52684 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A66449E82AD0924200E52684 /* SettingsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A66449EA2AD0931100E52684 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A66449EC2AD0934500E52684 /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A66449EB2AD0931900E52684 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A66449EE2AD0946E00E52684 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		A67159402A70A1540038F4BC /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +378,7 @@
 				A6D024532A6F27770014CF15 /* My Schedule View */,
 				A6D024522A6F275F0014CF15 /* Full Schedule Table View */,
 				A6D024512A6F27550014CF15 /* MainView */,
+				A63FB20F2AD027F300F3B437 /* SettingsView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -569,15 +624,20 @@
 				A671593B2A70993F0038F4BC /* MainModuleBuilder.swift in Sources */,
 				A61675AC2A6F4FC500AF7F64 /* Coordinatable.swift in Sources */,
 				A6B76D912A5F57BB00386477 /* GetSchedule.swift in Sources */,
+				A66449E62AD08FF000E52684 /* SettingsModuleBuilder.swift in Sources */,
 				A61675AA2A6F4FB100AF7F64 /* Coordinator.swift in Sources */,
 				A67159532A70DD9F0038F4BC /* MySchedulePresenter.swift in Sources */,
+				A63FB2122AD0282F00F3B437 /* SettingsViewController.swift in Sources */,
 				A6B76D992A5F6D1900386477 /* ScheduleViewCell.swift in Sources */,
 				A61675AE2A6F502700AF7F64 /* Configurator.swift in Sources */,
 				A6F154612A642D0A00140DC5 /* GetStatistics.swift in Sources */,
 				A6AD35FD2A5EF16E00D9E883 /* SceneDelegate.swift in Sources */,
 				A6B42C762A64A6AD006E27E2 /* ScheduleFactory.swift in Sources */,
 				A6AD362D2A5EFC6A00D9E883 /* FullScheduleTableViewController.swift in Sources */,
+				A66449EF2AD0946E00E52684 /* SettingsPresenter.swift in Sources */,
+				A66449E92AD0924200E52684 /* SettingsCoordinator.swift in Sources */,
 				A642AE422A639359009E8788 /* GetNews.swift in Sources */,
+				A66449ED2AD0934500E52684 /* SettingsInteractor.swift in Sources */,
 				A6B76D972A5F5D2100386477 /* DI.swift in Sources */,
 				A67159452A70A1E70038F4BC /* FSDetailInteractor.swift in Sources */,
 				A67159482A70B1D10038F4BC /* FSDetailPresenter.swift in Sources */,

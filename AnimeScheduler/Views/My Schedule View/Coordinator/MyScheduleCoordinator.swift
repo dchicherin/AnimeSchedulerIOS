@@ -10,6 +10,7 @@ import UIKit
 
 protocol MyScheduleModuleOuput: AnyObject {
     func moveToFullSchedule()
+    func moveToSettings()
 }
 class MyScheduleCoordinator: Coordinator {
     var parent: Coordinator? = nil
@@ -33,5 +34,11 @@ extension MyScheduleCoordinator: MyScheduleModuleOuput {
         myScheduleCoordinator.start()
         print(child)
         child.append(myScheduleCoordinator)
+    }
+    func moveToSettings() {
+        let settingsCoordinator = SettingsCoordinator(controller: navController)
+        settingsCoordinator.start()
+        print(child)
+        child.append(settingsCoordinator)
     }
 }

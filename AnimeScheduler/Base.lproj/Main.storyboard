@@ -382,10 +382,10 @@
             </objects>
             <point key="canvasLocation" x="2566" y="686"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="wkO-Ow-JxR">
             <objects>
-                <viewController id="CB9-jV-S4U" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="CB9-jV-S4U" customClass="SettingsViewController" customModule="Anime_Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOK-kQ-v7c">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
