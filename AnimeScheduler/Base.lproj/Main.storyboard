@@ -227,21 +227,6 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <color key="highlightedColor" systemColor="systemBackgroundColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EC5-rd-I7N">
-                                <rect key="frame" x="271" y="266" width="143" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="143" id="HmA-wu-iBt"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show News">
-                                    <color key="baseForegroundColor" red="0.023529411760000001" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="newsButtonTouchUpInside:" destination="s4z-aY-PRU" eventType="touchUpInside" id="esn-rG-nAf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phl-ic-kZA">
                                 <rect key="frame" x="139.66666666666666" y="830" width="150.99999999999997" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -260,39 +245,20 @@
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOM-94-uGN">
-                                <rect key="frame" x="271" y="348" width="143" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="143" id="i3S-Yp-lr8"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show stats">
-                                    <color key="baseForegroundColor" red="0.023529411760000001" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="getStatisticsButtonTouchUpInside:" destination="s4z-aY-PRU" eventType="touchUpInside" id="f0L-H6-1Hl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5ge-v9-4se"/>
                         <color key="backgroundColor" red="0.023529411764705882" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="IOM-94-uGN" firstAttribute="top" secondItem="5ge-v9-4se" secondAttribute="top" constant="289" id="71D-yy-A0v"/>
                             <constraint firstItem="5ge-v9-4se" firstAttribute="trailing" secondItem="htq-ma-9sx" secondAttribute="trailing" constant="20" id="7tY-h2-i7a"/>
                             <constraint firstItem="8mE-YO-idF" firstAttribute="top" secondItem="5ge-v9-4se" secondAttribute="top" constant="125" id="A08-G0-iaH"/>
-                            <constraint firstItem="EC5-rd-I7N" firstAttribute="top" secondItem="5ge-v9-4se" secondAttribute="top" constant="207" id="BIE-G1-gjw"/>
                             <constraint firstItem="5ge-v9-4se" firstAttribute="bottom" secondItem="oCM-Wq-5cU" secondAttribute="bottom" constant="40" id="EWv-Wq-NJE"/>
                             <constraint firstItem="5ge-v9-4se" firstAttribute="bottom" secondItem="phl-ic-kZA" secondAttribute="bottom" constant="33" id="Ham-W2-wWs"/>
                             <constraint firstItem="htq-ma-9sx" firstAttribute="leading" secondItem="M2l-nT-vVP" secondAttribute="trailing" constant="8" symbolic="YES" id="Hhr-1K-JTD"/>
                             <constraint firstItem="bb3-vp-g0K" firstAttribute="leading" secondItem="5ge-v9-4se" secondAttribute="leading" constant="16" id="IEt-83-bf9"/>
                             <constraint firstItem="phl-ic-kZA" firstAttribute="top" secondItem="bb3-vp-g0K" secondAttribute="bottom" constant="8" symbolic="YES" id="JCn-a3-elQ"/>
                             <constraint firstItem="htq-ma-9sx" firstAttribute="top" secondItem="5ge-v9-4se" secondAttribute="top" constant="59" id="JeI-7E-dBS"/>
-                            <constraint firstItem="5ge-v9-4se" firstAttribute="trailing" secondItem="EC5-rd-I7N" secondAttribute="trailing" constant="16" id="PwG-NA-3Zq"/>
                             <constraint firstItem="5ge-v9-4se" firstAttribute="trailing" secondItem="8mE-YO-idF" secondAttribute="trailing" constant="16" id="SjY-9g-gIB"/>
-                            <constraint firstItem="5ge-v9-4se" firstAttribute="trailing" secondItem="IOM-94-uGN" secondAttribute="trailing" constant="16" id="TG4-4w-8DR"/>
                             <constraint firstItem="oCM-Wq-5cU" firstAttribute="centerX" secondItem="5ge-v9-4se" secondAttribute="centerX" id="Zqt-W1-4fe"/>
                             <constraint firstItem="M2l-nT-vVP" firstAttribute="top" secondItem="5ge-v9-4se" secondAttribute="top" constant="59" id="jk5-KA-8Ez"/>
                             <constraint firstItem="bb3-vp-g0K" firstAttribute="centerX" secondItem="5ge-v9-4se" secondAttribute="centerX" id="lOJ-PK-QbV"/>
@@ -306,9 +272,7 @@
                     <connections>
                         <outlet property="addToWatchButton" destination="phl-ic-kZA" id="xZJ-ME-Re4"/>
                         <outlet property="addedLabel" destination="oCM-Wq-5cU" id="Nw2-wT-bVw"/>
-                        <outlet property="getStatisticsButton" destination="IOM-94-uGN" id="CBN-gc-WXY"/>
                         <outlet property="imageBigView" destination="M2l-nT-vVP" id="mcB-CD-MG2"/>
-                        <outlet property="showNewsButton" destination="EC5-rd-I7N" id="66I-o2-pEd"/>
                         <outlet property="synopsisTextView" destination="bb3-vp-g0K" id="3VS-Ya-Lec"/>
                         <outlet property="titleLabel" destination="htq-ma-9sx" id="App-qc-pSa"/>
                         <outlet property="viewMALButton" destination="8mE-YO-idF" id="tQz-yC-zwe"/>
@@ -392,6 +356,9 @@
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWn-2f-Bxo">
                                 <rect key="frame" x="50" y="179" width="51" height="31"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="CB9-jV-S4U" eventType="valueChanged" id="LEx-n0-dfB"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show added anime from previous season" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-qx-ZNT">
                                 <rect key="frame" x="119" y="168" width="192" height="53"/>
@@ -413,6 +380,9 @@
                             <constraint firstItem="t0D-qx-ZNT" firstAttribute="top" secondItem="r3f-Eo-T6A" secondAttribute="top" constant="109" id="mpd-ra-Mcc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="showPrevSlider" destination="HWn-2f-Bxo" id="Nqd-WT-Y17"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ydd-3q-ro3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

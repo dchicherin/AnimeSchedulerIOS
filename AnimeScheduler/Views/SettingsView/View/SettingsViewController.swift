@@ -15,6 +15,7 @@ protocol SettingsViewControllerInput {
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet weak var showPrevSlider: UISwitch!
     weak var output: SettingsModuleOuput?
     var interactor: SettingsInteractorInput?
     
@@ -31,7 +32,7 @@ class SettingsViewController: UIViewController {
         buttonFS.layer.masksToBounds = true
         let image = UIImage(systemName: "list.bullet.rectangle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
         buttonFS.setImage(image, for: .normal)
-        buttonFS.tintColor = .white
+        buttonFS.tintColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
         buttonFS.addTarget(self, action: #selector(moveToFullSchedule), for: .touchUpInside)
         return buttonFS
     }()
@@ -41,7 +42,7 @@ class SettingsViewController: UIViewController {
         buttonFS.layer.masksToBounds = true
         let image = UIImage(systemName: "heart", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
         buttonFS.setImage(image, for: .normal)
-        buttonFS.tintColor = .white
+        buttonFS.tintColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
         buttonFS.addTarget(self, action: #selector(moveToMySchedule), for: .touchUpInside)
         return buttonFS
     }()
@@ -49,7 +50,7 @@ class SettingsViewController: UIViewController {
         //Creating a floating button
         let buttonFS = UIButton(frame: CGRect(x: 40, y: 5, width: 60, height: 60))
         buttonFS.layer.masksToBounds = true
-        let image = UIImage(systemName: "gear", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
+        let image = UIImage(systemName: "gear", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .bold))
         buttonFS.setImage(image, for: .normal)
         buttonFS.tintColor = .white
         return buttonFS
@@ -67,6 +68,14 @@ class SettingsViewController: UIViewController {
         bottomNavBar.addSubview(buttonSettings)
         buttonMS.frame =  CGRect(x: view.frame.size.width/2 - 30, y: 5, width: 60, height: 60)
         buttonSettings.frame = CGRect(x: view.frame.size.width - 100, y: 5, width: 60, height: 60)
+        
+        showPrevSlider.setOn((interactor?.getSlider() ?? false), animated: true)
+        print(interactor?.getSlider())
+    }
+    @IBAction func sliderMoved(_ sender: Any) {
+        let save = showPrevSlider.isOn
+        interactor?.saveSlider(save)
+        print(interactor?.getSlider())
     }
     @objc func moveToMySchedule(sender: UIButton!) {
         output?.moveToMySchedule()

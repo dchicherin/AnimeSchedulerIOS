@@ -11,8 +11,14 @@ import UserNotifications
 protocol SettingsInteractorInput {
     func pressMoveToFullSchedule()
     func pressMoveToMySchedule()
+    func saveSlider(_ value: Bool)
+    func getSlider() -> Bool
 }
 class SettingsInteractor: SettingsInteractorInput {
+    func getSlider() -> Bool {
+        return UserDefaults.standard.bool(forKey: "ShowOlder")
+    }
+    
 
     let presenter: SettingsPresenterInput
 
@@ -26,5 +32,7 @@ class SettingsInteractor: SettingsInteractorInput {
     func pressMoveToMySchedule() {
         presenter.presentMoveToMySchedule()
     }
-    
+    func saveSlider(_ value: Bool){
+        UserDefaults.standard.set(value, forKey: "ShowOlder")
+    }
 }

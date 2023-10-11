@@ -40,7 +40,7 @@ class FSDetailInteractor: FSDetailInteractorInput {
         newSchedule.day = positionToSave.broadcast?.day
         do {
             try context.save()
-            
+            /*
             //Установка уведомления о начале
             let content = UNMutableNotificationContent()
             content.title = "\(positionToSave.title) aires today"
@@ -77,11 +77,8 @@ class FSDetailInteractor: FSDetailInteractorInput {
                 let request = UNNotificationRequest(identifier: String(positionToSave.mal_id), content: content, trigger: trigger)
                 
                 UNUserNotificationCenter.current().add(request)
-            }
+            }*/
             presenter?.updateSavedStatus()
-            Analytics.logEvent("added_to_watch_list", parameters: [
-              AnalyticsParameterItemName: newSchedule.title!
-            ])
         } catch {
             print(error)
         }

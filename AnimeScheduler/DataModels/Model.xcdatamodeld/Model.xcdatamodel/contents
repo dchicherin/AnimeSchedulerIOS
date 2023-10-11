@@ -13,4 +13,7 @@
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
+    <entity name="Settings" representedClassName="Settings" syncable="YES" codeGenerationType="class">
+        <attribute name="show_previous" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
 </model>
